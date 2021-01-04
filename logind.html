@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+<title>Ssembatya Shafic | login page</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="login.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="cutom style-form.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row" style="justify-content: center;">
+              
+              <div class="col-lg-8">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Welcomes to Shafic's login database...</h1>
+                  </div>
+                  <form class="user">
+                    <div class="form-group">
+                      <input type="name" class="form-control form-control-user" id="user" aria-describedby="emailHelp" placeholder="Enter Email Address or username ..." required>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" id="key" placeholder="Password goes here" required>
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+                    <a onclick="login()" >
+                      <button class="btn btn-primary btn-user btn-block" style="color: rgb(64, 4, 204); font-size: 17px;background-color: rgb(219, 26, 210);">Login</button>
+                    </a>
+                    <hr>
+                    </a>
+                  </form>
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="../pages/Contact us.html">Forgot Password?</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="../pages/Contact us.html">Create an Account!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    function login(){
+	let name=document.getElementById("user").value;
+	let password=document.getElementById("key").value;	
+    if((name=="shafic" && password=="fic")||(name=="shanie" && password=="fic")||(name=="summit" && password=="fic")){
+      alert("you logged in successfully")
+	window.open("https://drive.google.com/drive/folders/18_esXR0vH3gaB6Z57gTw2DRQJX0D6g_0?usp=sharing");
+	}
+	else{alert("wrong user name and password");}
+  }
+  </script>
+
+</body>
+
+</html>
