@@ -61,27 +61,21 @@
                <article class="margin-bottom">
                   <!-- text -->                 
                   <div class="post-text">
-                     <h1>Contact Me</h1>
+                     
                      <div class="line">
                         <div class="margin">
                            <div class="s-12 l-6">
-                              <h4>Ssembatya Shafic - For Information Tech</h4>
+                              <h4>Ssembatya Shafic - For Summit Tech</h4>
                               <address>
                                  <p><i class="icon-home icon"></i> Kayabwe-Mpigi, 84km Kampala</p>
                                  <p><i class="icon-globe_black icon"></i> Uganda - Africa</p>
                                  <p><i class="icon-mail icon"></i> summitsmith842@gmail.com</p>
                               </address>
                            </div>
-                           <div class="s-12 l-6">
-                              <h4>Just in case of any Response to Summit, Feel free to fill the form below</h4>
-                              <form class="customform" action="emailto:summitsmith842@gmail.com" data-netlify-recaptcha="true" name="contact" method="POST" data-netlify="true">
-                                 <div class="s-12"><input name="" placeholder="Your e-mail" title="Your e-mail" type="text" /></div>
-                                 <div class="s-12"><input name="" placeholder="Your name" title="Your name" type="text" /></div>
-                                 <div class="s-12"><textarea placeholder="Your message" name="" rows="5"></textarea></div>
-                                 <div data-netlify-recaptcha="true"></div>
-                                 <button type="submit">Send </button>
-                              </form>
-                           </div>
+
+                           <script type="text/javascript" src="https://form.jotform.com/jsform/212360965919060"></script>
+
+                           
                         </div>
                      </div>
                   </div>
@@ -91,34 +85,9 @@
                   </div>
                </article>
                <!-- AD REGION -->
-               <div class="line">
-                  <div class="advertising horizontal">
-                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                     <!-- Fashion Blog -->
-                     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8115128083480193" data-ad-slot="9121305263" data-ad-format="auto"></ins>
-                     <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                     </script>          
-                  </div>
-               </div>
+               
             </div>
-            <!-- SIDEBAR -->             
-            <div class="s-12 m-5 l-3">
-               <aside>
-                  <!-- AD REGION -->         
-                  <div class="advertising margin-bottom hide-s">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- Fashion 160x600 -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:160px;height:600px"
-                         data-ad-client="ca-pub-8115128083480193"
-                         data-ad-slot="7468355662"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>          
-                  </div>
-               </aside>
-            </div>
+           
          </div>
       </section>
       <!-- FOOTER -->       
@@ -126,7 +95,7 @@
          <footer>
             <div class="s-12 l-8">
                <p>
-                  Copyright 2021, summitsmith - info tech<br>
+                  Copyright 2020, summitsmith - info tech<br>
                   There for you always. Just tap me we solve tech issues, yeah.
                </p>
             </div>
@@ -151,7 +120,93 @@
              s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
              var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
          })();
-       </script>
+      </script>
        <!-- /GetButton.io widget -->
+       
+      
+       
+   
+  <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-212360965919060");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    }
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
    </body>
 </html>
+
+
